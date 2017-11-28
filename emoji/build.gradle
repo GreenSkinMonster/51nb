@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion as int
+    buildToolsVersion rootProject.ext.buildToolsVersion as String
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion as int
+        targetSdkVersion rootProject.ext.targetSdkVersion as int
+    }
+
+    resourcePrefix 'emoji'
+}
+
+dependencies {
+    compile "com.android.support:support-v4:$supportLibraryVersion"
+    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
+}

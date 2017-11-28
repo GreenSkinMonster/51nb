@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notify_type"
+        android:title="类型"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/notify_thread"
+                android:title="帖子"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/notify_comment"
+                android:title="点评"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/notify_at"
+                android:title="提到我的"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/notify_system"
+                android:title="系统提醒"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+</menu>

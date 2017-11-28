@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_upload_img"
+        android:title="@string/action_upload_img"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_device_info"
+        android:title="@string/action_device_info"
+        android:visible="false"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_restore_content"
+        android:title="@string/action_restore_content"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,78 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:orientation="vertical"
+       tools:parentTag="LinearLayout">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:minHeight="32dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_alignParentLeft="true"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:text=""
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/author_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_author"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:text=""
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/info_text_size"/>
+
+
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:id="@+id/tv_image_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_replycounter"
+            android:padding="2dp"
+            android:text="{faw-picture-o}"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/info_text_size"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_replycounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text=""
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/info_text_size"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:padding="2dp"
+        android:text=""
+        android:textSize="18sp"/>
+
+</merge>

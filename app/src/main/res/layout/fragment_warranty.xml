@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?list_item_background"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:padding="4dp"
+            android:text="输入7位或10位机型号，可以查询机型的具体配置信息"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="输入完整的序列号，可以查询机器的保修状态及部件清单"
+            android:textSize="17sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/quote_text_background"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:padding="4dp"
+        android:text="7位或10位格式如: 2007CA2或或20AA0000JJ"
+        android:textIsSelectable="true"
+        android:textSize="17sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:gravity="center"
+            android:hint=""
+            android:maxLines="1"
+            android:textSize="17sp"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lable_background"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/result_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+</LinearLayout>

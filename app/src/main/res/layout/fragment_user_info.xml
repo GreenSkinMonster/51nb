@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?list_item_background"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/userinfo_avatar"
+            android:layout_width="@dimen/avatar_info_size"
+            android:layout_height="@dimen/avatar_info_size"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/userinfo_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userinfo_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/user_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_corner"
+                android:padding="4dp"
+                android:text="@string/user_online"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_search_threads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackground"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_white_24dp"
+            android:drawableTint="@color/md_grey_500"
+            android:text="搜索帖子"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

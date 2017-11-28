@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="list_item_background" format="color"/>
+    <attr name="list_item_divider" format="color"/>
+    <attr name="swipe_color" format="color"/>
+    <attr name="swipe_background" format="color"/>
+    <attr name="dialog_background" format="color"/>
+    <attr name="comment_title_background_color" format="color"/>
+    <attr name="quote_background" format="reference"/>
+
+    <attr name="action_mode_text_color" format="color"/>
+    <attr name="fab_background_tint" format="color"/>
+
+    <attr name="actionBarMargin" format="dimension"/>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="all" value="3"/>
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <declare-styleable name="ValueChagerView">
+        <attr name="title" format="string"/>
+        <attr name="maxValue" format="integer"/>
+        <attr name="minValue" format="integer"/>
+        <attr name="currentValue" format="integer"/>
+    </declare-styleable>
+
+</resources>

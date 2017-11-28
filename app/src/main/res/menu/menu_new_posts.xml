@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/new_posts_type"
+        android:title="类型"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/new_type_reply"
+                android:title="最新回复"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/new_type_thread"
+                android:title="最新发表"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/new_type_hot"
+                android:title="最新热门"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/new_type_digest"
+                android:title="最新精华"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/new_type_sofa"
+                android:title="抢沙发"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+</menu>

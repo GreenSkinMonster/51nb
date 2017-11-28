@@ -1,0 +1,347 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="ThemeLightBase" parent="MaterialDrawerTheme.Light">
+    </style>
+
+    <style name="ThemeDarkBase" parent="MaterialDrawerTheme">
+    </style>
+
+    <style name="ThemeLight" parent="ThemeLightBase">
+
+        <item name="android:windowBackground">?list_item_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+
+        <item name="actionBarPopupTheme">@style/MyToolbar.PopupTheme.Light</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="actionBarMargin">0dp</item>
+
+        <item name="action_mode_text_color">@android:color/white</item>
+        <item name="fab_background_tint">@color/md_grey_400</item>
+
+        <!-- MaterialDrawer : change smaller drawer item's color -->
+        <item name="material_drawer_secondary_text">?material_drawer_primary_text</item>
+        <item name="material_drawer_selected_text">?colorAccent</item>
+        <!-- Hamburger-Icon color -->
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        <!-- change searchView suggestion background color-->
+        <item name="android:autoCompleteTextViewStyle">@style/MyAutoCompleteTextView</item>
+
+        <item name="colorPrimary">@color/md_grey_700</item>
+        <item name="colorPrimaryDark">@color/md_grey_800</item>
+        <item name="colorAccent">@color/forum_color</item>
+
+        <item name="android:textColor">@color/textColorPrimaryLight</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryLight</item>
+        <item name="android:textColorSecondary">@color/textColorSecondaryLight</item>
+        <item name="panelMenuListTheme">@style/Theme.CompactMenu.Light</item>
+
+        <item name="background">@color/day_background</item>
+        <item name="list_item_background">#FFFFFF</item>
+        <item name="list_item_divider">#F0F0F0</item>
+        <item name="quote_background">@drawable/quote_background_light</item>
+        <item name="emojiBackground">@color/md_grey_200</item>
+        <item name="swipe_background">@color/white</item>
+        <item name="swipe_color">@color/icon_blue</item>
+        <item name="dialog_background">@color/md_grey_100</item>
+        <item name="comment_title_background_color">@color/comment_title_background_color_day</item>
+
+        <!-- Matisse begin -->
+        <item name="toolbar">@style/Toolbar.Zhihu</item>
+        <item name="album.dropdown.title.color">@color/zhihu_album_dropdown_title_text</item>
+        <item name="album.dropdown.count.color">@color/zhihu_album_dropdown_count_text</item>
+        <item name="album.element.color">@android:color/white</item>
+        <item name="album.thumbnail.placeholder">@color/zhihu_album_dropdown_thumbnail_placeholder
+        </item>
+        <item name="album.emptyView">@drawable/ic_empty_zhihu</item>
+        <item name="album.emptyView.textColor">@color/zhihu_album_empty_view</item>
+        <item name="item.placeholder">@color/zhihu_item_placeholder</item>
+        <item name="item.checkCircle.backgroundColor">
+            @color/zhihu_item_checkCircle_backgroundColor
+        </item>
+        <item name="item.checkCircle.borderColor">@color/zhihu_item_checkCircle_borderColor</item>
+        <item name="page.bg">@color/zhihu_page_bg</item>
+        <item name="bottomToolbar.bg">@color/zhihu_bottom_toolbar_bg</item>
+        <item name="bottomToolbar.preview.textColor">@color/zhihu_bottom_toolbar_preview</item>
+        <item name="bottomToolbar.apply.textColor">@color/zhihu_bottom_toolbar_apply</item>
+        <item name="preview.bottomToolbar.back.textColor">
+            @color/zhihu_preview_bottom_toolbar_back_text
+        </item>
+        <item name="preview.bottomToolbar.apply.textColor">
+            @color/zhihu_preview_bottom_toolbar_apply
+        </item>
+        <item name="listPopupWindowStyle">@style/Popup.Matisse.Light</item>
+        <item name="capture.textColor">@color/zhihu_capture</item>
+        <!-- Matisse end -->
+    </style>
+
+    <style name="ThemeLight.Red" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_red_700</item>
+        <item name="colorPrimaryDark">@color/md_red_800</item>
+    </style>
+
+    <style name="ThemeLight.Pink" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_pink_700</item>
+        <item name="colorPrimaryDark">@color/md_pink_800</item>
+    </style>
+
+    <style name="ThemeLight.Purple" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_purple_700</item>
+        <item name="colorPrimaryDark">@color/md_purple_800</item>
+    </style>
+
+    <style name="ThemeLight.DeepPurple" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_deep_purple_700</item>
+        <item name="colorPrimaryDark">@color/md_deep_purple_800</item>
+    </style>
+
+    <style name="ThemeLight.Indigo" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_indigo_700</item>
+        <item name="colorPrimaryDark">@color/md_indigo_800</item>
+    </style>
+
+    <style name="ThemeLight.Blue" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_blue_700</item>
+        <item name="colorPrimaryDark">@color/md_blue_800</item>
+    </style>
+
+    <style name="ThemeLight.LightBlue" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_light_blue_700</item>
+        <item name="colorPrimaryDark">@color/md_light_blue_800</item>
+    </style>
+
+    <style name="ThemeLight.Cyan" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_cyan_700</item>
+        <item name="colorPrimaryDark">@color/md_cyan_800</item>
+    </style>
+
+    <style name="ThemeLight.Teal" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_teal_700</item>
+        <item name="colorPrimaryDark">@color/md_teal_800</item>
+    </style>
+
+    <style name="ThemeLight.Green" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_green_700</item>
+        <item name="colorPrimaryDark">@color/md_green_800</item>
+    </style>
+
+    <style name="ThemeLight.LightGreen" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_light_green_700</item>
+        <item name="colorPrimaryDark">@color/md_light_green_800</item>
+    </style>
+
+    <style name="ThemeLight.Lime" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_lime_700</item>
+        <item name="colorPrimaryDark">@color/md_lime_800</item>
+    </style>
+
+    <style name="ThemeLight.Yellow" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_yellow_700</item>
+        <item name="colorPrimaryDark">@color/md_yellow_800</item>
+    </style>
+
+    <style name="ThemeLight.Amber" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_amber_700</item>
+        <item name="colorPrimaryDark">@color/md_amber_800</item>
+    </style>
+
+    <style name="ThemeLight.Orange" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_orange_700</item>
+        <item name="colorPrimaryDark">@color/md_orange_800</item>
+    </style>
+
+    <style name="ThemeLight.DeepOrange" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_deep_orange_700</item>
+        <item name="colorPrimaryDark">@color/md_deep_orange_800</item>
+    </style>
+
+    <style name="ThemeLight.Brown" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_brown_700</item>
+        <item name="colorPrimaryDark">@color/md_brown_800</item>
+    </style>
+
+    <style name="ThemeLight.Grey" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_grey_700</item>
+        <item name="colorPrimaryDark">@color/md_grey_800</item>
+    </style>
+
+    <style name="ThemeLight.BlueGrey" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_blue_grey_700</item>
+        <item name="colorPrimaryDark">@color/md_blue_grey_800</item>
+    </style>
+
+    <style name="ThemeLight.White" parent="ThemeLight">
+        <item name="colorPrimary">@color/md_grey_50</item>
+        <item name="colorPrimaryDark">@color/md_grey_300</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <!-- Hamburger-Icon color -->
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle.Dark</item>
+    </style>
+
+    <style name="ThemeLight.Black" parent="ThemeLight">
+        <item name="colorPrimary">@color/nearly_black</item>
+        <item name="colorPrimaryDark">@color/md_black_1000</item>
+    </style>
+
+    <style name="ThemeDark" parent="ThemeDarkBase">
+
+        <item name="android:windowBackground">?list_item_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+
+        <item name="actionBarPopupTheme">@style/MyToolbar.PopupTheme.Dark</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="actionBarMargin">0dp</item>
+
+        <item name="action_mode_text_color">@android:color/white</item>
+        <item name="fab_background_tint">@color/md_grey_900</item>
+
+        <!-- MaterialDrawer : change smaller drawer item's color -->
+        <item name="material_drawer_secondary_text">?material_drawer_primary_text</item>
+        <item name="material_drawer_selected_text">?colorAccent</item>
+
+        <!-- change searchView suggestion background color-->
+        <item name="android:autoCompleteTextViewStyle">@style/MyAutoCompleteTextView</item>
+
+        <item name="colorPrimary">#2A2A2A</item>
+        <item name="colorPrimaryDark">@color/md_grey_900</item>
+        <item name="colorAccent">@color/forum_color</item>
+
+        <item name="android:textColor">@color/textColorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/textColorSecondaryDark</item>
+        <item name="panelMenuListTheme">@style/Theme.CompactMenu.Dark</item>
+
+        <item name="background">@color/night_background</item>
+        <item name="list_item_background">@color/md_grey_900</item>
+        <item name="list_item_divider">#282828</item>
+        <item name="quote_background">@drawable/quote_background_dark</item>
+        <item name="emojiBackground">@color/md_grey_900</item>
+        <item name="swipe_background">@color/md_grey_800</item>
+        <item name="swipe_color">@color/white</item>
+        <item name="dialog_background">#2B2C2D</item>
+        <item name="comment_title_background_color">@color/comment_title_background_color_night
+        </item>
+
+        <!-- Matisse begin -->
+        <item name="toolbar">@style/Toolbar.Dracula</item>
+        <item name="album.dropdown.title.color">@color/dracula_album_dropdown_title_text</item>
+        <item name="album.dropdown.count.color">@color/dracula_album_dropdown_count_text</item>
+        <item name="album.element.color">@android:color/white</item>
+        <item name="album.thumbnail.placeholder">@color/md_grey_900</item>
+        <item name="album.emptyView">@drawable/ic_empty_dracula</item>
+        <item name="album.emptyView.textColor">@color/dracula_album_empty_view</item>
+        <item name="item.placeholder">@color/md_grey_700</item>
+        <item name="item.checkCircle.backgroundColor">
+            @color/dracula_item_checkCircle_backgroundColor
+        </item>
+        <item name="item.checkCircle.borderColor">@color/dracula_item_checkCircle_borderColor</item>
+        <item name="page.bg">@color/md_grey_800</item>
+        <item name="bottomToolbar.bg">@color/md_grey_900</item>
+        <item name="bottomToolbar.preview.textColor">@color/dracula_bottom_toolbar_preview</item>
+        <item name="bottomToolbar.apply.textColor">@color/dracula_bottom_toolbar_apply</item>
+        <item name="preview.bottomToolbar.back.textColor">
+            @color/dracula_preview_bottom_toolbar_back_text
+        </item>
+        <item name="preview.bottomToolbar.apply.textColor">
+            @color/dracula_preview_bottom_toolbar_apply
+        </item>
+        <item name="android:listPopupWindowStyle">@style/Popup.Dracula</item>
+        <item name="listPopupWindowStyle">@style/Popup.Matisse.Dark</item>
+        <item name="capture.textColor">@color/dracula_capture</item>
+        <!-- Matisse end -->
+    </style>
+
+    <style name="ThemeBlack" parent="ThemeDark">
+        <item name="colorPrimary">@color/nearly_black</item>
+        <item name="colorPrimaryDark">@color/md_black_1000</item>
+
+        <item name="list_item_background">@color/black</item>
+        <item name="list_item_divider">#252525</item>
+        <item name="quote_background">@drawable/quote_background_black</item>
+    </style>
+
+    <style name="MyAutoCompleteTextView" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:popupBackground">?background</item>
+    </style>
+
+    <style name="MaterialDrawer.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="MaterialDrawer.DrawerArrowStyle.Dark" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/black</item>
+    </style>
+
+    <style name="MyToolbar.PopupTheme.Light" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="MyToolbar.PopupTheme.Dark" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <!-- hardware menu key popup menu style -->
+    <style name="Theme.CompactMenu.Light" parent="@style/Theme.AppCompat.CompactMenu">
+        <item name="android:itemTextAppearance">
+            @style/TextAppearance.Material.CompactMenu.Light
+        </item>
+    </style>
+
+    <style name="TextAppearance.Material.CompactMenu.Light" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/textColorPrimaryLight</item>
+    </style>
+
+    <style name="Theme.CompactMenu.Dark" parent="@style/Theme.AppCompat.CompactMenu">
+        <item name="android:itemTextAppearance">
+            @style/TextAppearance.Material.CompactMenu.Dark
+        </item>
+    </style>
+
+    <style name="TextAppearance.Material.CompactMenu.Dark" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/textColorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="colorPrimaryDark">@color/splash_background</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- fix ugly Preference Category with android version < 4.4 -->
+    <style name="Preference.Category.Material">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="Popup.Matisse.Light" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupBackground">@color/md_grey_100</item>
+    </style>
+
+    <style name="Popup.Matisse.Dark" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/md_grey_800</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <style name="ThemeTransitionAnimation">
+        <item name="@android:windowEnterAnimation">@anim/window_fade_in</item>
+        <item name="@android:windowExitAnimation">@anim/window_fade_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,29 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/et_poll_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ib_remove"
+        android:maxLines="1"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="17sp"/>
+
+    <ImageButton
+        android:id="@+id/ib_remove"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="4dp"
+        android:background="?selectableItemBackground"
+        android:padding="2dp"
+        android:scaleType="centerInside"/>
+</RelativeLayout>
+

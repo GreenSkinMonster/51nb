@@ -1,0 +1,45 @@
+<LinearLayout android:id="@+id/quote_text_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?attr/quote_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/quote_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/quote_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/quote_post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/quote_author"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/quote_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <com.greenskinmonster.a51nb.ui.widget.TextViewWithEmoticon
+        android:id="@+id/quote_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"/>
+
+</LinearLayout>

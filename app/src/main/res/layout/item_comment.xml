@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+    <RelativeLayout
+        android:id="@+id/author_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_avatar">
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:text=""
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/author_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="@dimen/info_text_size"/>
+
+    </RelativeLayout>
+
+    <com.greenskinmonster.a51nb.ui.widget.TextViewWithEmoticon
+        android:id="@+id/tv_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author_layout"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:text=""
+        android:textSize="17sp"/>
+
+</RelativeLayout>

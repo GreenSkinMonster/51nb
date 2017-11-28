@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <MultiSelectListPreference
+        android:defaultValue="@array/default_freq_menu_values"
+        android:entries="@array/pref_title_freq_menu_names"
+        android:entryValues="@array/pref_title_freq_menu_values"
+        android:key="PERF_FREQ_MENUS"
+        android:title="@string/pref_title_freq_menus"/>
+
+    <Preference
+        android:key="PERF_PASSWORD_MGT"
+        android:title="密码安全"
+        android:widgetLayout="@layout/layout_preference"/>
+
+    <Preference
+        android:key="PERF_BLACKLIST"
+        android:summary="@string/pref_summary_blacklist"
+        android:title="@string/pref_title_blacklist"
+        android:widgetLayout="@layout/layout_preference"/>
+
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/my_posts_type"
+        android:title="类型"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/post_type_thread"
+                android:title="主题"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/post_type_reply"
+                android:title="回复"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+</menu>

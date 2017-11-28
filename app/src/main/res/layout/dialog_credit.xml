@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自动悬赏总额: 0 nb资产值, 税后支付 资产值 0 nb, 您有 资产值 0 nb"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每次自动悬赏 : "
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_ext_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:minWidth="32dp"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nb资产值"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总共奖励悬赏 : "
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_credit_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:minWidth="32dp"
+            android:selectAllOnFocus="true"
+            android:maxLines="1"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每人最多可获得 : "
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_credit_member_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:selectAllOnFocus="true"
+            android:maxLines="1"
+            android:minWidth="32dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中奖率 : "
+            android:textSize="18sp"/>
+
+        <Spinner
+            android:id="@+id/sp_credit_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

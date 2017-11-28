@@ -1,0 +1,70 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:orientation="vertical"
+       tools:parentTag="RelativeLayout">
+
+    <com.greenskinmonster.a51nb.ui.widget.TextViewWithEmoticon
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#33BBDEFB"
+        android:gravity="top"
+        android:padding="4dp"
+        android:text=""
+        android:textSize="18sp"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_title"
+        android:background="@color/background_grey"/>
+
+    <com.greenskinmonster.a51nb.ui.widget.ImageLayout
+        android:id="@+id/image_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line1"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/btn_item_link"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/image_layout"
+        android:layout_margin="4dp"
+        android:background="@drawable/lable_background"
+        android:text="直达链接"
+        android:textColor="@color/md_white_1000"
+        android:textSize="15sp"/>
+
+    <com.greenskinmonster.a51nb.ui.widget.TextViewWithEmoticon
+        android:id="@+id/tv_post_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_toRightOf="@id/image_layout"
+        android:padding="4dp"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_post_info"
+        android:layout_toRightOf="@id/image_layout"
+        android:background="@color/background_grey"/>
+
+    <com.greenskinmonster.a51nb.ui.widget.TextViewWithEmoticon
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_toRightOf="@id/image_layout"
+        android:padding="4dp"/>
+
+</merge>

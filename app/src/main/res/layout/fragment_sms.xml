@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?list_item_background"
+    android:orientation="vertical">
+
+    <com.greenskinmonster.a51nb.ui.widget.XRecyclerView
+        android:id="@+id/rv_sms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/border_line"
+        android:divider="@android:color/transparent"
+        android:transcriptMode="normal"/>
+
+    <View
+        android:id="@+id/border_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rl_input"
+        android:background="@color/background_grey"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?list_item_background"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_emoji_switch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/et_sms"
+            android:layout_alignParentLeft="true"
+            android:background="?attr/selectableItemBackground"/>
+
+        <com.vanniktech.emoji.EmojiEditText
+            android:id="@+id/et_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/countdown_button"
+            android:layout_toRightOf="@+id/ib_emoji_switch"
+            android:background="@android:color/transparent"
+            android:gravity="bottom"
+            android:hint="@string/txt_quick_hint"
+            android:inputType="textMultiLine"
+            android:maxLines="6"
+            android:minHeight="48dp"
+            android:minLines="1"
+            android:padding="12dp"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:text=""
+            app:emojiSize="26sp"/>
+
+        <com.greenskinmonster.a51nb.ui.widget.CountdownButton
+            android:id="@+id/countdown_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/et_sms"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+    <com.greenskinmonster.a51nb.ui.widget.ContentLoadingView
+        android:id="@+id/content_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"/>
+
+</RelativeLayout>

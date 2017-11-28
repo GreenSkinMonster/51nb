@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.greenskinmonster.a51nb"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1000"
+          android:versionName="1.0.00">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".ui.HiApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_config"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeLight">
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+        </activity>
+
+        <activity
+            android:name=".ui.MainFrameActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Launcher">
+        </activity>
+
+        <activity
+            android:name=".ui.IntentActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="http"/>
+                <data android:host="forum.51nb.com"/>
+                <data android:pathPrefix="/forum.php"/>
+                <data android:pathPrefix="/forum-"/>
+                <data android:pathPrefix="/thread-"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="https"/>
+                <data android:host="forum.51nb.com"/>
+                <data android:pathPrefix="/forum.php"/>
+                <data android:pathPrefix="/forum-"/>
+                <data android:pathPrefix="/thread-"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+        <meta-data
+            android:name="com.greenskinmonster.a51nb.glide.MyGlideModule"
+            android:value="GlideModule"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <activity
+            android:name=".ui.ImageViewerActivity"
+            android:theme="@style/ThemeBlack"/>
+        <activity android:name=".ui.PostActivity"/>
+        <activity android:name=".ui.ThreadDetailActivity"/>
+        <activity android:name=".ui.UserInfoActivity"/>
+        <activity android:name=".ui.SettingActivity"/>
+        <activity android:name=".ui.CommonActivity"/>
+        <activity android:name=".ui.SimpleListActivity"/>
+        <activity
+            android:name=".ui.SmsActivity"
+            android:launchMode="singleTask"/>
+
+    </application>
+
+</manifest>

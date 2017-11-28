@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:focusable="true"
+              android:orientation="vertical"
+              android:paddingBottom="6dp"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp"
+              android:paddingTop="4dp">
+
+    <RelativeLayout
+        android:id="@+id/thread_detail_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:minHeight="32dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:text=""
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/author_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_client"
+            android:layout_toRightOf="@+id/tv_author"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/md_blue_600"
+            android:textSize="@dimen/author_text_size"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_author"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:text=""
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/info_text_size"/>
+
+
+        <ImageView
+            android:id="@+id/iv_client"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/floor"
+            android:gravity="center"
+            android:padding="4dp"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/floor"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="6dp"
+            android:background="@drawable/round_textview"
+            android:gravity="center"
+            android:minWidth="32dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text=""
+            android:textColor="?android:textColorSecondary"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/trade_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/poll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:clickable="true"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:clickable="true"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/rating_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:clickable="true"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_comment_white_24dp"
+            android:tint="?android:textColorSecondary"/>
+
+        <ImageView
+            android:id="@+id/iv_reply"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingBottom="4dp"
+            android:src="@drawable/ic_reply_white_24dp"
+            android:tint="?android:textColorSecondary"/>
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_more_horiz_white_24dp"
+            android:textSize="17sp"
+            android:tint="?android:textColorSecondary"/>
+
+    </LinearLayout>
+
+</LinearLayout>

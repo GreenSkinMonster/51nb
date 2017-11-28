@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/image_layout"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/cb_option"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_rates"
+            android:layout_toRightOf="@id/rb_option"
+            android:padding="4dp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_rates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="?colorAccent"/>
+    </LinearLayout>
+
+
+    <com.greenskinmonster.a51nb.ui.widget.ImageLayout
+        android:id="@+id/image_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

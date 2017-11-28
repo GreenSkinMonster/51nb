@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="评分"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:text="评分区间 / 今日剩余"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/score1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_score1_value"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/edittext_background"
+            android:hint="技术分"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:text=""
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/tv_score1info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="?android:textColorSecondary"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/score2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_score2_value"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/edittext_background"
+            android:hint="资产值"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:text=""
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/tv_score2info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="?android:textColorSecondary"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/score3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_score3_value"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/edittext_background"
+            android:hint="联谊分"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/tv_score3info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="?android:textColorSecondary"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="4dp"
+        android:text="可选评分理由"
+        android:textColor="?android:textColorSecondary"/>
+
+    <Spinner
+        android:id="@+id/sp_rate_reasons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/et_rate_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/edittext_background"
+        android:hint="评分原因"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/btn_rate"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="4dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="评分"
+        android:textSize="17sp"/>
+
+</LinearLayout>
