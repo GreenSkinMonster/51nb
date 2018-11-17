@@ -41,7 +41,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import io.fabric.sdk.android.services.concurrency.AsyncTask;
 
 /**
  * Created by GreenSkinMonster on 2017-07-28.
@@ -177,23 +176,23 @@ public class AllForumsFragment extends BaseFragment implements SwipeRefreshLayou
         if (!mSwipeLayout.isRefreshing())
             mSwipeLayout.setRefreshing(true);
 
-        new AsyncTask<Void, Void, List<Forum>>() {
-
-            @Override
-            protected List<Forum> doInBackground(Void... voids) {
-                return ForumParser.fetchAllForums();
-            }
-
-            @Override
-            protected void onPostExecute(List<Forum> forums) {
-                mSwipeLayout.setRefreshing(false);
-                if (forums != null && forums.size() > 0) {
-                    HiSettingsHelper.getInstance().setAllForums(forums);
-                    addForums();
-                    mAdapter.notifyDataSetChanged();
-                }
-            }
-        }.execute();
+//        new AsyncTask<Void, Void, List<Forum>>() {
+//
+//            @Override
+//            protected List<Forum> doInBackground(Void... voids) {
+//                return ForumParser.fetchAllForums();
+//            }
+//
+//            @Override
+//            protected void onPostExecute(List<Forum> forums) {
+//                mSwipeLayout.setRefreshing(false);
+//                if (forums != null && forums.size() > 0) {
+//                    HiSettingsHelper.getInstance().setAllForums(forums);
+//                    addForums();
+//                    mAdapter.notifyDataSetChanged();
+//                }
+//            }
+//        }.execute();
 
     }
 
