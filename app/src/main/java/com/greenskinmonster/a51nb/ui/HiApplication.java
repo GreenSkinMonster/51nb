@@ -5,7 +5,6 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
 
-import com.crashlytics.android.Crashlytics;
 import com.evernote.android.job.JobManager;
 import com.greenskinmonster.a51nb.BuildConfig;
 import com.greenskinmonster.a51nb.R;
@@ -15,7 +14,6 @@ import com.greenskinmonster.a51nb.service.NotiJobCreator;
 
 import java.io.File;
 
-import io.fabric.sdk.android.Fabric;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 /**
@@ -43,7 +41,6 @@ public class HiApplication extends Application implements Application.ActivityLi
         JobManager.create(this).addJobCreator(new NotiJobCreator());
 
         if (!BuildConfig.DEBUG)
-            Fabric.with(this, new Crashlytics());
 
         HiSettingsHelper.getInstance();
 

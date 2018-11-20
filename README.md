@@ -11,22 +11,13 @@
 - android.permission.WRITE_EXTERNAL_STORAGE 可选，用于保存下载文件，或者选取上传文件、自定义字体等。
 - android.permission.CAMERA 可选，用于直接拍照上传图片。
 
-# Credits
-- HiPDA简洁版 - https://bitbucket.org/jejer/hipda/
-- Android Iconics - https://github.com/mikepenz/Android-Iconics
-- Android Priority Job Queue - https://github.com/yigit/android-priority-jobqueue
-- android-filepicker - https://github.com/Angads25/android-filepicker
-- android-job - https://github.com/evernote/android-job
-- BubbleLayout - https://github.com/MasayukiSuda/BubbleLayout
-- Calligraphy - https://github.com/chrisjenx/Calligraphy
-- Crashlytics - https://try.crashlytics.com/
-- Emoji - https://github.com/vanniktech/Emoji
-- Emoji Java - https://github.com/vdurmont/emoji-java
-- EventBus - https://github.com/greenrobot/EventBus
-- Glide - https://github.com/bumptech/glide
-- Jsoup - http://jsoup.org/
-- MaterialDrawer - https://github.com/mikepenz/MaterialDrawer
-- Matisse - https://github.com/zhihu/Matisse
-- OkHttp - https://github.com/square/okhttp
-- Spectrum - https://github.com/the-blue-alliance/spectrum
-- Subsampling Scale Image View - https://github.com/davemorrissey/subsampling-scale-image-view
+电脑论坛app是一款讨论电脑相关的电子产品的app，
+app有很多创新功能，如搜索，悄悄话，信息提醒，查看新帖，我的帖子，我的收藏，浏览记录，保修参数配置等等。
+【搜索】，可以根据作者名字，在全论坛中搜索这个作者的相关文章
+【悄悄话】，给发贴的作者发送悄悄话，只有你们两个人能看到
+【信息提醒】，你的帖子有人评论了，会有信息提醒
+【查看新帖】，按发帖时间倒序显示最新的帖子
+【我的帖子】，查看你自己发出的帖子有哪些
+【我的收藏】，查看你收藏过的别人的帖子
+【浏览记录】，你曾经浏览过的帖子在这里出现
+
