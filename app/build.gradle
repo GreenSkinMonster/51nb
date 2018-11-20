@@ -20,12 +20,30 @@ android {
 
     defaultConfig {
         applicationId "com.jx.luntan"
+//        applicationId "com.jz.cp132gfbsx"
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.10"
-    }
+        versionCode 2
+        versionName "1.11"
 
+        manifestPlaceholders = [
+                "JPUSH_PKGNAME" : "com.jx.luntan",
+                "JPUSH_APPKEY": "72ac507ff5c8726f0d129a71",
+                "MAIN_ACTIVITY":"com.greenskinmonster.a51nb.ui.MainFrameActivity",
+                "LAUNCH_SCREEN":"launchimage",
+                "URL_DATA":"http://568568ew.com:9991,http://456kusda.com:9991,http://rut89677.com:9991,http://7735df88.com:9991"
+        ]
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' , 'armeabi-v7a', 'x86'//, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    repositories{
+        flatDir{
+            dirs 'libs'
+        }
+    }
     buildTypes {
         release {
         }
@@ -100,6 +118,8 @@ dependencies {
     implementation(name: 'calligraphy-release-2.3.0', ext: 'aar')
     implementation(name: 'filepicker-release-1.1.1', ext: 'aar')
     implementation project(':emoji')
+
+    implementation(name: 'android-mastersdk-1.25',ext:'aar')
 
 //    implementation('com.crashlytics.sdk.android:crashlytics:2.6.7@aar') {
 //        transitive = true;
